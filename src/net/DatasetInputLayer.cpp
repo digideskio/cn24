@@ -45,7 +45,7 @@ DatasetInputLayer::DatasetInputLayer (Dataset& dataset,
   elements_testing_ = dataset_.GetTestingSamples();
   elements_total_ = elements_training_ + elements_testing_;
   
-  LOGDEBUG << "Total samples: " << elements_total_;
+  LOGINFO << "Total samples: " << elements_total_;
 
   // Generate random permutation of the samples
   // First, we need an array of ascending numbers
